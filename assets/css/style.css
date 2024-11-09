@@ -60,7 +60,8 @@ body {
   overflow: hidden;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-/*IMAGE CAROUSEL*/
+/* IMAGE CAROUSEL */
+/* IMAGE CAROUSEL */
 .swiper {
   width: 100%;
   height: 100%;
@@ -73,13 +74,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative; /* Enable absolute positioning for images */
+  overflow: hidden; /* Hide any overflow */
 }
 
 .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%; /* Cover container width */
+  height: 100%; /* Cover container height */
   object-fit: cover;
+  transform: rotate(90deg);
 }
 
 #news-slider {
@@ -95,22 +103,27 @@ body {
 }
 
 .post-slide .post-img {
-  position: relative;
-  overflow: hidden;
+  position: relative; /* Enable absolute positioning for images */
+  overflow: hidden; /* Hide overflow to prevent white space */
   border-radius: 10px;
-  height: 500px; /* Set a fixed height for portrait orientation */
+  height: 350px;
 }
 
 .post-slide .post-img img {
-  width: auto; /* Adjust width to auto for portrait scaling */
-  height: 100%; /* Keep height at 100% to fill the container */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%; /* Cover container width */
+  height: 100%; /* Cover container height */
   object-fit: cover;
-  transform: scale(1, 1);
+  transform: rotate(90deg);
   transition: transform 0.2s linear;
 }
 
 .post-slide:hover .post-img img {
-  transform: scale(1.1, 1.1);
+  transform: scale(1.1) rotate(90deg); /* Scale and rotate on hover */
 }
 
 .owl-controls .owl-buttons {
