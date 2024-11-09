@@ -74,6 +74,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .swiper-slide img {
   display: block;
   width: 100%;
@@ -84,6 +85,7 @@ body {
 #news-slider {
   margin-top: 80px;
 }
+
 .post-slide {
   background: #fff;
   margin: 20px 15px 20px;
@@ -91,24 +93,31 @@ body {
   padding-top: 1px;
   box-shadow: 0px 14px 22px -9px #bbcbd8;
 }
+
 .post-slide .post-img {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
+  height: 500px; /* Set a fixed height for portrait orientation */
 }
+
 .post-slide .post-img img {
-  width: 100%;
-  height: auto;
+  width: auto; /* Adjust width to auto for portrait scaling */
+  height: 100%; /* Keep height at 100% to fill the container */
+  object-fit: cover;
   transform: scale(1, 1);
   transition: transform 0.2s linear;
 }
+
 .post-slide:hover .post-img img {
   transform: scale(1.1, 1.1);
 }
+
 .owl-controls .owl-buttons {
   text-align: center;
   margin-top: 20px;
 }
+
 .owl-controls .owl-buttons .owl-prev {
   background: #fff;
   position: absolute;
@@ -119,6 +128,7 @@ body {
   box-shadow: 3px 14px 25px -10px #92b4d0;
   transition: background 0.5s ease 0s;
 }
+
 .owl-controls .owl-buttons .owl-next {
   background: #fff;
   position: absolute;
@@ -129,6 +139,7 @@ body {
   box-shadow: -3px 14px 25px -10px #92b4d0;
   transition: background 0.5s ease 0s;
 }
+
 .owl-controls .owl-buttons .owl-prev:after,
 .owl-controls .owl-buttons .owl-next:after {
   content: "\f104";
@@ -136,6 +147,7 @@ body {
   color: #333;
   font-size: 30px;
 }
+
 .owl-controls .owl-buttons .owl-next:after {
   content: "\f105";
 }
@@ -143,6 +155,7 @@ body {
 .min-height-100vh {
   min-height: 100vh;
 }
+
 /*FOOTER*/
 footer {
   background-color: var(--color-pink);
