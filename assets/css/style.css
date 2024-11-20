@@ -30,6 +30,21 @@ body {
 .f-18-b {
   font-size: 20px;
 }
+
+/* nav */
+.nav-link:focus,
+.nav-link:hover {
+  color: #d5792b;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #d5792b;
+}
+.nav-item {
+  font-size: 18px;
+  margin-left: 1rem;
+}
+
 /*HEADER*/
 .set-bg-header {
   background: linear-gradient(
@@ -194,8 +209,39 @@ footer {
   color: var(--color-black);
 }
 .set-list-style li a:hover {
-  color: var(--color-green);
+  color: #d5792b;
   transition: 0.3s;
+}
+.copy-section {
+  padding-top: 20px;
+  background-color: #f3e7e1;
+  border-top: 1px #cfc3bd solid;
+}
+.copyright-d p {
+  float: right;
+}
+.copyright-d p a {
+  text-decoration: none;
+  color: #d5792b;
+}
+
+.order-now-btn {
+  color: #d5792b;
+  border-color: #d5792b;
+  border: 2px solid #d5792b;
+  background-color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.order-now-btn:hover {
+  color: #fff;
+  background-color: #d5792b;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 1280px) {
@@ -210,5 +256,99 @@ footer {
   .set-bg-header {
     background-repeat: repeat;
     background-size: 100%;
+  }
+  .btn4 {
+    display: none;
+  }
+  .copyright-d p {
+    float: none;
+  }
+}
+
+.btn4-2 {
+  display: none !important;
+}
+
+/* Visible on tablet and mobile views (width 1024px and below) */
+@media (max-width: 1024px) {
+  .btn4-2 {
+    display: block !important;
+  }
+}
+
+/* From Uiverse.io by Satoshikamotona */
+.btn4 {
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #d5792b;
+  min-width: 165px;
+  border: 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  padding: 16px 20px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btn4:hover {
+  opacity: 0.95;
+  background-color: #333;
+}
+
+.btn4 .animation {
+  border-radius: 100%;
+  animation: ripple 0.6s linear infinite;
+}
+
+.btn4-2 {
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #d5792b;
+  min-width: 125px;
+  border: 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  padding: 16px 20px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btn4-2:hover {
+  opacity: 0.95;
+  background-color: #333;
+}
+
+.btn4-2 .animation2 {
+  border-radius: 100%;
+  animation: ripple 0.6s linear infinite;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1),
+      0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1),
+      0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
   }
 }
