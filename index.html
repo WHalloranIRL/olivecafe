@@ -123,9 +123,7 @@
       </div>
 
       <div class="mt-5 text-center">
-        <button class="btn4">
-          <i class="animation"></i>ORDER NOW<i class="animation"></i>
-        </button>
+        <button class="btn4"><i class="animation"></i>ORDER NOW<i class="animation"></i></button>
       </div>
     </section>
     <!-- ABOUT US -->
@@ -240,35 +238,43 @@
     </div>
 
     <!-- iframe start -->
-     <div class="modal fade" id="orderNowModal" tabindex="-1" aria-labelledby="orderNowLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="orderNowLabel">Order Now</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <iframe
-                src="https://goodeats.io/theolivecafe?embed_outlet=theolivecafe"
-                allowpaymentrequest="true"
-                style="width: 100%; height: 500px; border: none;">
-              </iframe>
-            </div>
+    <div
+      class="modal fade"
+      id="orderNowModal"
+      tabindex="-1"
+      aria-labelledby="orderNowLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="orderNowLabel">Order Now</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <iframe
+              src="https://goodeats.io/theolivecafe?embed_outlet=theolivecafe"
+              allowpaymentrequest="true"
+              style="width: 100%; height: 80vh; border: none">
+            </iframe>
           </div>
         </div>
       </div>
+    </div>
 
-      <script>
-        // Select all elements with the specified classes
-        document.querySelectorAll(".btn4, .btn4-2").forEach((btn) => {
-          btn.addEventListener("click", function (e) {
-            e.preventDefault();
-            const modal = new bootstrap.Modal(document.getElementById("orderNowModal"));
-            modal.show();
-          });
+    <script>
+      // Select all elements with the specified classes
+      document.querySelectorAll(".btn4, .btn4-2").forEach((btn) => {
+        btn.addEventListener("click", function (e) {
+          e.preventDefault();
+          const modal = new bootstrap.Modal(document.getElementById("orderNowModal"));
+          modal.show();
         });
-      </script>
-      
+      });
+    </script>
 
     <!-- ifram end -->
     <!-- FOOTER -->
@@ -334,11 +340,11 @@
               <p>Copyright © 2024 The Olive Cafe. All rights reserved.</p>
             </div>
           </div>
-            <div class="col-lg-6">
-              <div class="copyright-d">
-                <p>Design & developed by <a href="https://thewebgroup.in/">THE WEB</a></p>
-              </div>
+          <div class="col-lg-6">
+            <div class="copyright-d">
+              <p>Design & developed by <a href="https://thewebgroup.in/">THE WEB</a></p>
             </div>
+          </div>
         </div>
       </div>
     </section>
