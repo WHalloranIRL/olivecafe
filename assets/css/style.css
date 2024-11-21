@@ -32,12 +32,10 @@ body {
 }
 
 /* nav */
-.nav-link:focus,
-.nav-link:hover {
+.nav-link:focus, .nav-link:hover {
   color: #d5792b;
 }
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link.show {
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
   color: #d5792b;
 }
 .nav-item {
@@ -244,10 +242,13 @@ footer {
   transform: scale(1.1);
 }
 
+
+
 @media only screen and (max-width: 1280px) {
   .post-slide .post-content {
     padding: 0px 15px 25px 15px;
   }
+  
 }
 @media only screen and (max-width: 520px) {
   .f-42-w {
@@ -262,7 +263,7 @@ footer {
   }
   .copyright-d p {
     float: none;
-  }
+}
 }
 
 .btn4-2 {
@@ -276,7 +277,7 @@ footer {
   }
 }
 
-/* From Uiverse.io by Satoshikamotona */
+/* From Uiverse.io by Satoshikamotona */ 
 .btn4 {
   outline: 0;
   display: inline-flex;
@@ -307,6 +308,10 @@ footer {
 .btn4 .animation {
   border-radius: 100%;
   animation: ripple 0.6s linear infinite;
+}
+
+.modal-lg, .modal-xl {
+  --bs-modal-width: 98%;
 }
 
 .btn4-2 {
@@ -343,12 +348,18 @@ footer {
 
 @keyframes ripple {
   0% {
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1),
-      0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+    box-shadow:
+      0 0 0 0 rgba(255, 255, 255, 0.1),
+      0 0 0 20px rgba(255, 255, 255, 0.1),
+      0 0 0 40px rgba(255, 255, 255, 0.1),
+      0 0 0 60px rgba(255, 255, 255, 0.1);
   }
 
   100% {
-    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1),
-      0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+    box-shadow:
+      0 0 0 20px rgba(255, 255, 255, 0.1),
+      0 0 0 40px rgba(255, 255, 255, 0.1),
+      0 0 0 60px rgba(255, 255, 255, 0.1),
+      0 0 0 80px rgba(255, 255, 255, 0);
   }
 }
