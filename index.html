@@ -240,14 +240,19 @@
     <!-- iframe start -->
 
     <script>
-      // Select all elements with the specified classes
       document.querySelectorAll(".btn4, .btn4-2").forEach((btn) => {
         btn.addEventListener("click", function (e) {
           e.preventDefault();
+
+          // Get the user's screen dimensions
+          const width = screen.width;
+          const height = screen.height;
+
+          // Open the order page in a new full-screen window
           window.open(
             "https://theolivecafeie.square.site/",
             "_blank",
-            "noopener,noreferrer,width=900,height=700"
+            `noopener,noreferrer,left=0,top=0,width=${width},height=${height}`
           );
         });
       });
